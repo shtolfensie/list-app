@@ -14,9 +14,16 @@ $main-comp-color: #baa898;
   box-shadow: 0.5px 3px 0px rgba($main-comp-color, 0.6);
 
   .header {
-    font-size: 1.2rem;
-    text-transform: capitalize;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+    a {
+      cursor: pointer;
+    }
   }
 
   ul {
@@ -26,6 +33,10 @@ $main-comp-color: #baa898;
       span {
         margin-left: -5px;
         height: 100%;
+        &.done {
+          color: green;
+          text-decoration: line-through;
+        }
       }
       form {
         // position: relative;
