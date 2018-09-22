@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+body {
+  background: #f9fff9;
+  font-family: "Ubuntu", sans-serif;
+}
+
+form {
+  font-family: "Ubuntu", sans-serif;
+}
+
+input {
+  font-family: inherit;
+}

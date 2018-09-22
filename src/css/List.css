@@ -1,0 +1,58 @@
+.list {
+  min-width: 15rem;
+  min-height: 4rem;
+  background: #baa898;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px 4px 7px 7px;
+  -webkit-box-shadow: 0.5px 3px 0px rgba(186, 168, 152, 0.6);
+          box-shadow: 0.5px 3px 0px rgba(186, 168, 152, 0.6);
+}
+
+.list .header {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.list ul {
+  list-style-position: inside;
+}
+
+.list ul li {
+  height: 1.5rem;
+}
+
+.list ul li span {
+  margin-left: -5px;
+  height: 100%;
+}
+
+.list ul li form {
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.list ul li form .bullet {
+  position: relative;
+  float: left;
+  top: 18px;
+  margin-right: 5px;
+  z-index: 200;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.list ul li form input {
+  height: 1.2rem;
+  border: none;
+  border-bottom: 2px #fff solid;
+  outline: none;
+  background-color: #baa898;
+  color: #fff;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=List.css.map */

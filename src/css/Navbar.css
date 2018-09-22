@@ -1,0 +1,97 @@
+nav {
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 3px 0px #f7d9b2;
+          box-shadow: 0px 3px 0px #f7d9b2;
+  position: relative;
+  background: #ffbf69;
+  border-radius: 0px 0px 10px 10px;
+}
+
+nav .logo {
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  left: calc(50% - 5rem);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .logo p {
+  font-size: 3rem;
+  color: #f9fff9;
+  font-weight: 500;
+}
+
+nav .left-side {
+  padding: 0.5rem 0 0.5rem 2rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .left-side .nav-item {
+  margin-right: 2rem;
+  padding: 10px;
+  min-width: 4rem;
+  border-radius: 7px;
+  text-decoration: none;
+  text-align: center;
+  background: #2ec4b6;
+  -webkit-box-shadow: 0px 2.2px 0px rgba(203, 243, 240, 0.6);
+          box-shadow: 0px 2.2px 0px rgba(203, 243, 240, 0.6);
+  border-radius: 5px;
+  color: #fff;
+}
+
+nav .left-side .nav-item:hover {
+  background-color: #2ab3a7;
+}
+
+nav .left-side .nav-item:active {
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
+nav .right-side {
+  width: 50%;
+}
+
+nav .right-side .avatar-container {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  height: 70px;
+  width: 70px;
+  background-color: #f39b9b;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 2px 0px rgba(41, 76, 254, 0.5);
+          box-shadow: 1px 2px 0px rgba(41, 76, 254, 0.5);
+}
+
+nav .right-side .avatar-container .avatar {
+  border-radius: inherit;
+  height: inherit;
+  width: inherit;
+}
+/*# sourceMappingURL=Navbar.css.map */

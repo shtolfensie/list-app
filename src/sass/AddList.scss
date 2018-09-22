@@ -1,0 +1,145 @@
+// $main-comp-color: #242038;
+$main-comp-color: #ad296b;
+
+.main-wrapper {
+  position: absolute;
+  left: 5rem;
+  top: -6.1rem;
+  z-index: 100;
+  color: #fff;
+
+  transition: all 0.4s ease-in-out;
+
+  &.open {
+    top: 4rem;
+  }
+
+  .main-body {
+    border-radius: 0 0 10px 10px;
+    // background: #ff9f1c;
+    // background: #fcb755;
+    background: $main-comp-color;
+    min-width: 18rem;
+    height: 10rem;
+    padding: 1rem;
+    box-shadow: 1px 3px 0px rgba($main-comp-color, 0.6);
+
+    form {
+      position: relative;
+      top: 1rem;
+      .bullet {
+        position: relative;
+        float: left;
+        top: 18px;
+        margin-right: 5px;
+        z-index: 200;
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        border-radius: 50%;
+      }
+      input {
+        position: absolute;
+        height: 2.5rem;
+        width: 15rem;
+        border: none;
+        border-bottom: 3px #fff solid;
+        outline: none;
+        background-color: $main-comp-color;
+        color: #fff;
+        font-size: 20px;
+      }
+      label {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 10px;
+        color: #fff;
+        pointer-events: none;
+
+        transition: all 0.09s ease-in;
+      }
+      input:valid + label {
+        top: -10px;
+        font-size: 0.9rem;
+      }
+      button {
+        position: relative;
+        top: 4rem;
+        padding: 10px;
+        min-width: 4rem;
+        border-radius: 7px;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+
+        text-align: center;
+
+        background: #2ec4b6;
+        box-shadow: 0px 2.2px 0px rgba(203, 243, 240, 0.6);
+        border-radius: 5px;
+
+        color: #fff;
+
+        &:hover {
+          // transform: translate(0, 2px);
+          background-color: darken(#2ec4b6, 4%);
+        }
+        &:active {
+          transform: translate(0, 2px);
+        }
+
+        &:disabled {
+          background-color: darken(#2ec4b6, 6%);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .collapse-btn {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0 0 10px 10px;
+    background: $main-comp-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 3rem;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 1px 3px 0px rgba($main-comp-color, 0.6);
+
+    .up-arrow {
+      transition: all 0.2s ease-in;
+      position: absolute;
+      top: -20px;
+      left: 45%;
+    }
+
+    p {
+      transition: all 0.2s ease-in;
+      position: relative;
+      top: 0;
+    }
+  }
+
+  &.open > .collapse-btn {
+    p {
+      top: 25px;
+    }
+    .up-arrow {
+      top: 2px;
+    }
+  }
+}
+
+.background-courtain {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}

@@ -1,0 +1,155 @@
+.main-wrapper {
+  position: absolute;
+  left: 5rem;
+  top: -6.1rem;
+  z-index: 100;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-wrapper.open {
+  top: 4rem;
+}
+
+.main-wrapper .main-body {
+  border-radius: 0 0 10px 10px;
+  background: #ad296b;
+  min-width: 18rem;
+  height: 10rem;
+  padding: 1rem;
+  -webkit-box-shadow: 1px 3px 0px rgba(173, 41, 107, 0.6);
+          box-shadow: 1px 3px 0px rgba(173, 41, 107, 0.6);
+}
+
+.main-wrapper .main-body form {
+  position: relative;
+  top: 1rem;
+}
+
+.main-wrapper .main-body form .bullet {
+  position: relative;
+  float: left;
+  top: 18px;
+  margin-right: 5px;
+  z-index: 200;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.main-wrapper .main-body form input {
+  position: absolute;
+  height: 2.5rem;
+  width: 15rem;
+  border: none;
+  border-bottom: 3px #fff solid;
+  outline: none;
+  background-color: #ad296b;
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-wrapper .main-body form label {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transition: all 0.09s ease-in;
+  transition: all 0.09s ease-in;
+}
+
+.main-wrapper .main-body form input:valid + label {
+  top: -10px;
+  font-size: 0.9rem;
+}
+
+.main-wrapper .main-body form button {
+  position: relative;
+  top: 4rem;
+  padding: 10px;
+  min-width: 4rem;
+  border-radius: 7px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  background: #2ec4b6;
+  -webkit-box-shadow: 0px 2.2px 0px rgba(203, 243, 240, 0.6);
+          box-shadow: 0px 2.2px 0px rgba(203, 243, 240, 0.6);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.main-wrapper .main-body form button:hover {
+  background-color: #2ab3a7;
+}
+
+.main-wrapper .main-body form button:active {
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
+.main-wrapper .main-body form button:disabled {
+  background-color: #28ab9f;
+  cursor: not-allowed;
+}
+
+.main-wrapper .collapse-btn {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0 0 10px 10px;
+  background: #ad296b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 3rem;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 3px 0px rgba(173, 41, 107, 0.6);
+          box-shadow: 1px 3px 0px rgba(173, 41, 107, 0.6);
+}
+
+.main-wrapper .collapse-btn .up-arrow {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  top: -20px;
+  left: 45%;
+}
+
+.main-wrapper .collapse-btn p {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  top: 0;
+}
+
+.main-wrapper.open > .collapse-btn p {
+  top: 25px;
+}
+
+.main-wrapper.open > .collapse-btn .up-arrow {
+  top: 2px;
+}
+
+.background-courtain {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/*# sourceMappingURL=AddList.css.map */
