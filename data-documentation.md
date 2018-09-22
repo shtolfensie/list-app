@@ -13,7 +13,7 @@
       [{
         id: Number.required,
         name: String.required,
-        items: Array>Objects>{name, done},
+        items: Array>Objects>{name, done, tag, importance},
         tags: Array>String,
         color: Array>Color.inhex.String,
         position: Object>{ x.Number, y.Number }
