@@ -1,18 +1,33 @@
 import React from "react";
 import "../css/List.css";
 
-export default ({ list, addItem }) => {
+export default ({ list, items, addItem, deleteList, doneItem }) => {
+  const style = {
+    boxShadow: `0.5px 3px 0px rgba(${list.color}, 0.6)`,
+    backgroundColor: `rgb(${list.color})`
+  };
   const listItems = list.items
-    ? list.items.map((item, i) => (
-        <li key={i}>
-          <span>{item.name}</span>
-        </li>
-      ))
+    ? items.map((item, i) => {
+        return (
+          <li key={i}>
+            <span
+              className={item.done ? "done" : ""}
+              onClick={() => doneItem(item.id, list.id)}
+            >
+              {item.name}
+            </span>
+          </li>
+        );
+      })
     : null;
 
   return (
-    <div className="list">
-      <h1 className="header">{list.name}</h1>
+    <div className={`list`} style={style}>
+      <div className="shadow" />
+      <div className="header">
+        <h1>{list.name}</h1>
+        <a onClick={() => deleteList(list.id)}>Delete</a>
+      </div>
       <ul>
         {listItems}
         <li>
@@ -24,7 +39,7 @@ export default ({ list, addItem }) => {
               e.target.itemValue.value = "";
             }}
           >
-            <input name="itemValue" autoComplete="off" />
+            <input autoFocus name="itemValue" autoComplete="off" />
           </form>
         </li>
       </ul>

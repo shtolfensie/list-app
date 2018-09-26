@@ -15,6 +15,6 @@
         name: String.required,
         items: Array>Objects>{id, name, done, tag, importance},
         tags: Array>String,
-        color: Array>Color.inhex.String,
+        color: Color.rgb.String,
         position: Object>{ x.Number, y.Number }
       }]

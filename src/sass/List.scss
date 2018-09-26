@@ -2,22 +2,27 @@ $main-comp-color: #baa898;
 
 .list {
   min-width: 15rem;
+  max-width: 16rem;
   min-height: 4rem;
 
-  background: $main-comp-color;
+  // background: $main-comp-color;
   margin: 10px;
   padding: 10px;
   // flex-grow: 2;
   color: #fff;
 
   border-radius: 4px 4px 7px 7px;
-  box-shadow: 0.5px 3px 0px rgba($main-comp-color, 0.6);
+  // box-shadow: 0.5px 3px 0px rgba($main-color, 0.6);
 
   .header {
     margin-bottom: 1rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     h1 {
+      width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
       font-size: 1.2rem;
       text-transform: capitalize;
     }
@@ -33,8 +38,8 @@ $main-comp-color: #baa898;
       span {
         margin-left: -5px;
         height: 100%;
+        cursor: pointer;
         &.done {
-          color: green;
           text-decoration: line-through;
         }
       }
@@ -60,7 +65,8 @@ $main-comp-color: #baa898;
           border: none;
           border-bottom: 2px #fff solid;
           outline: none;
-          background-color: $main-comp-color;
+          // background-color: $main-comp-color;
+          background: inherit;
           color: #fff;
           font-size: 1rem;
           // font-size: 20px;
